@@ -151,8 +151,8 @@
             flex-direction: column;
             width: 100%;
             position: absolute;
-            top: var(--navbar-height);
-            left: 0;
+            top: var(--navbar-height)/2;
+            right: 100px;
             z-index: -1; /* Place behind the main navbar */
 
             background: var(--color-glass-bg);
@@ -200,7 +200,7 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                position: static;
+                position: absolute;
                 width: auto;
                 background-color: transparent !important;
                 background-image: none !important;
@@ -248,7 +248,7 @@
             
             <nav id="navbarMenu" class="navbar__menu" role="navigation" aria-labelledby="navbarToggle">
                 <ul class="navbar__list">
-                    <li class="navbar__item"><a href="#Home" class="navbar__link navbar__link--active">Home</a></li>
+                    <li class="navbar__item"><a href="#Home" class="navbar__link">Home</a></li>
                     <li class="navbar__item"><a href="#Team" class="navbar__link">Team</a></li>
 		    <li class="navbar__item"><a href="#Aerial Matrix" class="navbar__link">Aerial Matrix</a></li>
                     <li class="navbar__item"><a href="#Documentation" class="navbar__link">Documentation</a></li>
