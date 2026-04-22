@@ -113,6 +113,12 @@
 	    left: 100px;
         }
 
+	.navbar__brand img {
+  	    height: 1em;
+  	    width: auto;
+  	    vertical-align: middle;
+	}
+
         /* Make text readable against any background with a subtle shadow */
         .navbar__brand,
         .navbar__link {
@@ -236,7 +242,10 @@
   <body>
     <header class="navbar" role="banner">
         <div class="navbar__container">
-            <a href="#" class="navbar__brand" aria-label="Homepage">Lux Protocol</a>
+            <a href="#" class="navbar__brand" aria-label="Homepage">
+		<img src="./assets/logos/LP_white.webp" alt="LuxProtocol" />
+		Lux Protocol
+	    </a>
             
             <button class="navbar__toggle" 
                     id="navbarToggle" 
