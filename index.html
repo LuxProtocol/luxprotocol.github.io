@@ -57,14 +57,31 @@
             background-attachment: fixed; /* Ensures the gradient doesn't scroll with content */
         }
 
-	header {
-	    position: relative;
-	    width: 100%;
-	    min-height: auto;
-	    text-align: center;
-	    color: #fff;
+	.hero {
+    		position: relative;
+    		height: 100vh;
+    		overflow: hidden;
 	}
 
+	.hero__video {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
+    		object-fit: cover;
+	    	z-index: 1;
+	}
+
+	.hero-content {
+    		position: relative;
+    		z-index: 2;
+    		color: white; /* so it shows over video */
+    		text-align: center;
+    		top: 50%;
+    		transform: translateY(-50%);
+	}
+	
         /* Placeholder content to demonstrate scrolling */
         .content {
             padding: calc(var(--navbar-height) + 2rem) var(--navbar-padding);
@@ -274,18 +291,19 @@
             </nav>
         </div>
     </header>
-    <header>
-        <video autoplay muted loop playsinline class="hero__video">
-    	    <source src="assets/background/Matrix.mp4" type="video/mp4">
-  	</video>
-	<div class="header-content">
-            <div class="header-content-inner">
-                <h1>Lux Protocol</h1>
-                <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
-                <a href="#Home" class="btn btn-primary btn-lg">Learn More</a>
-            </div>
-        </div>
-    </header>
+    
+    <section class="hero">
+    	<video autoplay muted loop playsinline class="hero__video">
+            <source src="assets/background/Matrix.mp4" type="video/mp4">
+    	</video>
+
+    	<div class="hero-content">
+            <h1>Lux Protocol</h1>
+            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <a href="#Home" class="btn btn-primary btn-lg">Learn More</a>
+    	</div>
+    </section>
+
     <section id="Home">
       <h1>Aerial Matrix</h1>
       <p>
