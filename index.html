@@ -57,6 +57,14 @@
             background-attachment: fixed; /* Ensures the gradient doesn't scroll with content */
         }
 
+	header {
+	    position: relative;
+	    width: 100%;
+	    min-height: auto;
+	    text-align: center;
+	    color: #fff;
+	}
+
         /* Placeholder content to demonstrate scrolling */
         .content {
             padding: calc(var(--navbar-height) + 2rem) var(--navbar-padding);
@@ -264,6 +272,18 @@
                     <li class="navbar__item"><a href="#Documentation" class="navbar__link">Documentation</a></li>
                 </ul>
             </nav>
+        </div>
+    </header>
+    <header>
+        <video autoplay muted loop playsinline class="hero__video">
+    	    <source src="assets/background/Matrix.mp4" type="video/mp4">
+  	</video>
+	<div class="header-content">
+            <div class="header-content-inner">
+                <h1>Lux Protocol</h1>
+                <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+                <a href="#Home" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
         </div>
     </header>
     <section id="Home">
