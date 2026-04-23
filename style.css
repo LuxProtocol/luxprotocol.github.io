@@ -240,7 +240,7 @@ figcaption {
   background: #fff;
   color: #111;
   font-weight: 600;
-  top: 0.5rem;         /* lifts flush with the panel */
+  top: 0.7rem;         /* lifts flush with the panel */
   z-index: 2;
   border-radius: 6px 6px 0 0;
   border-bottom: 1px solid #fff; /* covers the panel's top border at the seam */
