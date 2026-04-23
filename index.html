@@ -87,12 +87,38 @@
 
 	.hero-content h1 {
     		font-size: 6rem;   /* try 3–6rem depending on how big you want */
+		text-shadow: 0 0 5px rgba(0,0,0,0.5);
 	}
 
 	.hero-content p {
     		font-size: 2rem;
+		text-shadow: 0 0 5px rgba(0,0,0,0.5);
 	}
 	
+	.glass-btn {
+    		padding: 12px 30px;
+    		font-size: 1.2rem;
+    		color: white;
+    		text-decoration: none;
+    		border-radius: 12px;
+		text-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+    		background: rgba(255, 255, 255, 0.1); /* transparent glass */
+    		backdrop-filter: blur(10px);
+    		-webkit-backdrop-filter: blur(10px); /* Safari support */
+
+    		border: 1px solid rgba(255, 255, 255, 0.2);
+    		box-shadow: 
+			0 8px 32px rgba(0, 0, 0, 0.3);
+			inset 0 0 10px rgba(255, 255, 255, 0.1);
+    		transition: all 0.3s ease;
+	}
+	.glass-btn:hover {
+    		background: rgba(255, 255, 255, 0.2);
+    		transform: translateY(-3px);
+    		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+	}
+
         /* Placeholder content to demonstrate scrolling */
         .content {
             padding: calc(var(--navbar-height) + 2rem) var(--navbar-padding);
@@ -303,14 +329,17 @@
         </div>
     </header> 
     <section class="hero">
-    	<video autoplay muted loop playsinline class="hero__video">
+    	<video autoplay muted loop playsinline class="hero__video" id="bgVideo">
             <source src="assets/background/Matrix.mp4" type="video/mp4">
     	</video>
-
+	<script>
+    	    const video = document.getElementById("bgVideo");
+    	    video.playbackRate = 0.25; // 25% speed
+	</script>
     	<div class="hero-content">
             <h1>Lux Protocol</h1>
             <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
-            <a href="#Home" class="btn btn-primary btn-lg">Learn More</a>
+            <a href="#Home" class="btn btn-lg glass-btn">Learn More</a>
     	</div>
     </section>
     <section id="Home">
