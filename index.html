@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lux Protocol</title>
-    <link rel="icon" type="image/webp" href="/assets/logos/LP_black.webp" />
+    <link rel="icon" type="image/webp" href="/assets/logos/LP_white.webp" />
     <link rel="stylesheet" href="style.css" />
     <style>
         /*
@@ -80,6 +80,17 @@
     		text-align: center;
     		top: 50%;
     		transform: translateY(-50%);
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.hero-content h1 {
+    		font-size: 6rem;   /* try 3–6rem depending on how big you want */
+	}
+
+	.hero-content p {
+    		font-size: 2rem;
 	}
 	
         /* Placeholder content to demonstrate scrolling */
@@ -139,7 +150,7 @@
         }
 
 	.navbar__brand img {
-  	    height: 5rem;
+  	    height: 4rem;
   	    width: auto;
   	    vertical-align: middle;
 	}
@@ -290,8 +301,7 @@
                 </ul>
             </nav>
         </div>
-    </header>
-    
+    </header> 
     <section class="hero">
     	<video autoplay muted loop playsinline class="hero__video">
             <source src="assets/background/Matrix.mp4" type="video/mp4">
@@ -303,7 +313,6 @@
             <a href="#Home" class="btn btn-primary btn-lg">Learn More</a>
     	</div>
     </section>
-
     <section id="Home">
       <h1>Aerial Matrix</h1>
       <p>
