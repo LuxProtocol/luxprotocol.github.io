@@ -128,20 +128,30 @@
 	START TEAM CSS
 	*/
 	.team {
-	  
 	}	
 
+	.team-row {
+	  display: grid;
+	  grid-template-columns: repeat(5, minmax(260px, 1fr));
+	} 
 	.team-column {
 	  float: left;
-	  width: 20%;
 	  margin-bottom: 16px;
-	  padding: 0 10px;
+	  padding: 0 25px;
+	  display: flex;
+	  flex-direction: column;
+	}
+	
+	.advisor-row {
+	  display: grid;
+	  grid-template-columns: repeat(3, minmax(260px, 1fr));
 	}
 	.advisor-column {
 	  float: left;
-          width: 33.3%;
           margin-bottom: 16px;
           padding: 0 50px;
+	  display: flex;
+	  flex-direction: column;
 	}
 
 	/* Display the columns below each other instead of side by side on small screens */
@@ -161,10 +171,12 @@
 	  display: flex;
 	  flex-direction: column;
 	  flex: 1;
+	  border-radius: 10px;
 	}
 	.team-card img {
 	  aspect-ratio: 1;
   	  object-fit: cover;
+	  border-radius: 10px 10px 0 0;
 	}
 
 	/* Some left and right padding inside the container */
@@ -446,7 +458,7 @@
 	<div class="team-subheader">
 	  <h1>The Students:</h1>
 	</div>
-	<div class="row">
+	<div class="team-row">
 	  <div class="team-column">
 	    <div class="team-card">
 	      <img src="./assets/headshots/Draper.jpg" alt="Draper" style="width:100%">
@@ -496,7 +508,7 @@
 	<div class="team-subheader">
           <h1>The Advisors:</h1>
         </div>
-	<div class="row">
+	<div class="advisor-row">
           <div class="advisor-column">
             <div class="team-card">
               <img src="./assets/headshots/Dr_Abdalla.jpg" alt="Dr. Abdalla" style="width:100%">
