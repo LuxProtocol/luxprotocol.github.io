@@ -124,6 +124,76 @@
     		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 	}
 
+	/*
+	START TEAM CSS
+	*/
+	.team {
+	  
+	}	
+
+	.team-column {
+	  float: left;
+	  width: 20%;
+	  margin-bottom: 16px;
+	  padding: 0 10px;
+	}
+	.advisor-column {
+	  float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 50px;
+	}
+
+	/* Display the columns below each other instead of side by side on small screens */
+	@media screen and (max-width: 650px) {
+	  .team-column {
+	    width: 100%;
+	    display: block;
+	  }
+	}
+
+	/* Add some shadows to create a card effect */
+	.team-card {
+	  background: rgba(255, 255, 255, 0.1); /* transparent glass */
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px); /* Safari support */
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	  display: flex;
+	  flex-direction: column;
+	  flex: 1;
+	}
+	.team-card img {
+	  aspect-ratio: 1;
+  	  object-fit: cover;
+	}
+
+	/* Some left and right padding inside the container */
+	.team-container {
+	  padding: 0 16px;
+	}
+
+	/* Clear floats */
+	.team-container::after, .row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+	.team-title {
+	  color: white;
+	  font-size: 1.8rem;
+	}
+
+	.team-header {
+	  font-size: 3rem;
+	}
+
+	.team-subheader {
+	  font-size: 2rem;
+	  margin-top: 30px;
+	  margin-bottom: 30px;
+	}
+
         /* Placeholder content to demonstrate scrolling */
         .content {
             padding: calc(var(--navbar-height) + 2rem) var(--navbar-padding);
@@ -368,79 +438,94 @@
         Aerial Matrix: (left) Process Diagram, (right) System Diagram
       </figcaption>
     </section>
-    <section id="Team">
-      <h1>Meet the Team</h1>
-      <div class="team-container">
-        <div class="team-member">
-            <div class="img-wrapper">
-                <img src="./assets/Draper.jpg" alt="Draper" />
-            </div>
-          <h3>Robert Draper</h3>
-          <p>
-            <strong>Project Manager</strong>
-          </p>
-          <p>Drone Manufacture</p>
+    <section class="team" id="Team">
+	<div class="team-header">
+      	  <h1>Meet the Team</h1>
         </div>
-        <div class="team-member">
-            <div class="img-wrapper">
-                <img src="./assets/Higginbotham.jpg" alt="Higginbotham" />
+	<div class="team-subheader">
+	  <h1>The Students:</h1>
+	</div>
+	<div class="row">
+	  <div class="team-column">
+	    <div class="team-card">
+	      <img src="./assets/headshots/Draper.jpg" alt="Draper" style="width:100%">
+	      <div class="team-container">
+		<h2>Robert Draper</h2>
+		<p class="team-title">Project Manager &amp; Drone Contruction Lead</p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="team-column">
+	    <div class="team-card">
+	      <img src="./assets/headshots/Higginbotham.jpg" alt="Higginbotham" style="width:100%">
+	      <div class="team-container">
+		<h2>Oliver Higginbotham</h2>
+		<p class="team-title">Chief Scientist &amp; Drone Control Lead</p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="team-column">
+	    <div class="team-card">
+	      <img src="./assets/headshots/Carter.jpg" alt="Carter" style="width:100%">
+	      <div class="team-container">
+		<h2>Caden Carter</h2>
+		<p class="team-title">Attachments Lead</p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="team-column">
+            <div class="team-card">
+              <img src="./assets/headshots/Evans.png" alt="Evans" style="width:100%">
+              <div class="team-container">
+                <h2>Joshua Evans</h2>
+                <p class="team-title">Drone Network Lead</p>
+              </div>
             </div>
-          <h3>Oliver Higginbotham</h3>
-          <p>
-            <strong>Chief Scientist</strong>
-          </p>
-          <p>Drone Control</p>
-        </div>
-        <div class="team-member">
-            <div class="img-wrapper">
-                <img src="./assets/Carter.jpg" alt="Carter" />
+          </div>
+          <div class="team-column">
+            <div class="team-card">
+              <img src="./assets/headshots/Gray.jpg" alt="Gray" style="width:100%">
+              <div class="team-container">
+                <h2>Antonio Gray</h2>
+                <p class="team-title">Object Detection Lead</p>
+              </div>
             </div>
-          <h3>Caden Carter</h3>
-          <p>Attachment Design</p>
+          </div>
+	</div>
+	<div class="team-subheader">
+          <h1>The Advisors:</h1>
         </div>
-        <div class="team-member">
-            <div class="img-wrapper">
-                <img src="./assets/Evans.png" alt="Evans" />
+	<div class="row">
+          <div class="advisor-column">
+            <div class="team-card">
+              <img src="./assets/headshots/Dr_Abdalla.jpg" alt="Dr. Abdalla" style="width:100%">
+              <div class="team-container">
+		<h2>Dr. Aly Abdalla</h2>
+                <p class="team-title">Faculty Advisor</p>
+              </div>
             </div>
-          <h3>Joshua Evans</h3>
-          <p>Drone Network</p>
-        </div>
-        <div class="team-member">
-            <div class="img-wrapper">
-                <img src="./assets/Gray.jpg" alt="Gray" />
+          </div>
+          <div class="advisor-column">
+            <div class="team-card">
+              <img src="./assets/headshots/Dr_Manias.jpg" alt="Manias" style="width:100%">
+              <div class="team-container">
+                <h2>Dr. Dimitrios Manias</h2>
+                <p class="team-title">Faculty Advisor</p>
+              </div>
             </div>
-          <h3>Antonio Gray</h3>
-          <p>Object Detection</p>
-        </div>
-        <div class="team-member">
-            <div class="img-wrapper">
-                <img src="./assets/Dr_Abdalla.jpg" alt="Dr. Abdalla" />
+          </div>
+          <div class="advisor-column">
+            <div class="team-card">
+              <img src="./assets/headshots/Dennis.jpg" alt="Mr. Dennis" style="width:100%">
+              <div class="team-container">
+                <h2>Curt Dennis</h2>
+                <p class="team-title">External Advisor</p>
+              </div>
             </div>
-          <h3>Dr. Aly Abdalla</h3>
-          <p>
-            <strong>Faculty Advisor</strong>
-          </p>
-        </div>
-        <div class="team-member">
-            <div class="img-wrapper">
-                <img src="./assets/Dr_Manias.jpg" alt="Dr. Manias" />
-            </div>
-          <h3>Dr. Dimitrios Manias</h3>
-          <p>
-            <strong>Faculty Advisor</strong>
-          </p>
-        </div>
-        <div class="team-member">
-            <div class="img-wrapper">
-                <img src="./assets/Dennis.jpg" alt="Mr. Dennis" />
-            </div>
-          <h3>Curt Dennis</h3>
-          <p>
-            <strong>External Advisor</strong>
-          </p>
-        </div>
-      </div>
-    </section>
+          </div>
+	</div>
+    
+
     <section id="Aerial Matrix" class="video-section">
         <video autoplay muted loop class="bg-video">
         <source src="./assets/Matrix.mp4" type="video/mp4">
