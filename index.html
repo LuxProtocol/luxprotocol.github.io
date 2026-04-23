@@ -102,6 +102,10 @@
     		text-decoration: none;
     		border-radius: 12px;
 		text-shadow: 0 0 5px rgba(0,0,0,0.5);
+		width: auto;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 
     		background: rgba(255, 255, 255, 0.1); /* transparent glass */
     		backdrop-filter: blur(10px);
@@ -332,10 +336,6 @@
     	<video autoplay muted loop playsinline class="hero__video" id="bgVideo">
             <source src="assets/background/Matrix.mp4" type="video/mp4">
     	</video>
-	<script>
-    	    const video = document.getElementById("bgVideo");
-    	    video.playbackRate = 0.25; // 25% speed
-	</script>
     	<div class="hero-content">
             <h1>Lux Protocol</h1>
             <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
