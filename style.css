@@ -269,3 +269,55 @@ figcaption {
   background: #fff;
 }
 
+.sponsor-label {
+font-size: 3rem;
+letter-spacing: 0.12em;
+color: var(--color-text-tertiary);
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 1.25rem;
+margin-top: 4rem;
+}
+.divider-bar {
+    height: 0.5px;
+    background: var(--color-border-tertiary);
+    margin: 0 1rem 1.25rem;
+  }
+.sponsor-wrap {
+padding: 2rem 0;
+overflow: hidden;
+}
+.track-container {
+overflow: hidden;
+mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+-webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+.sponsor-track {
+display: flex;
+align-items: center;
+gap: 0;
+width: max-content;
+animation: scroll-left 28s linear infinite;
+background: #5D1725;
+box-shadow: 
+	0 1px 2px rgba(0, 0, 0, 0.08),
+	0 4px 16px rgba(0, 0, 0, 0.15);
+
+}
+.sponsor-track:hover { animation-play-state: paused; }
+@keyframes scroll-left {
+0%   { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+.sponsor-card {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 2.5rem;
+border-right: 0.5px solid var(--color-border-tertiary);
+flex-shrink: 0;
+transition: opacity 0.2s;
+cursor: default;
+}
+.sponsor-card:hover { opacity: 0.6; }
+.sponsor-card svg { display: block; }

@@ -128,7 +128,10 @@
 	START TEAM CSS
 	*/
 	.team {
-	}	
+	  background: #faf0e6;			/*#faf0e6;*/
+	  color: #222;
+	  position: relative;
+	}
 
 	.team-row {
 	  display: grid;
@@ -171,12 +174,13 @@
 	  display: flex;
 	  flex-direction: column;
 	  flex: 1;
-	  border-radius: 10px;
+	  border-radius: 20px;
+	  background: #ffffff;
 	}
 	.team-card img {
 	  aspect-ratio: 1;
   	  object-fit: cover;
-	  border-radius: 10px 10px 0 0;
+	  border-radius: 20px 20px 0 0;
 	}
 
 	/* Some left and right padding inside the container */
@@ -192,7 +196,7 @@
 	}
 
 	.team-title {
-	  color: white;
+	  color: #333;
 	  font-size: 1.8rem;
 	}
 
@@ -206,8 +210,7 @@
 	  margin-bottom: 30px;
 	}
 
-
-        /* Placeholder content to demonstrate scrolling */
+	/* Placeholder content to demonstrate scrolling */
         .content {
             padding: calc(var(--navbar-height) + 2rem) var(--navbar-padding);
             height: 200vh;
@@ -505,6 +508,8 @@
             </div>
           </div>
 	</div>
+
+
 	<div class="team-subheader">
           <h1>The Advisors:</h1>
         </div>
@@ -537,7 +542,17 @@
             </div>
           </div>
 	</div>
-    
+
+	<div class="sponsor-wrap">
+	  <p class="sponsor-label">Our sponsors</p>
+	  <div class="divider-bar"></div>
+	  <div class="track-container">
+	    <div class="sponsor-track" id="track"></div>
+	  </div>
+	</div>
+	<script src="sponsor-slider.js"></script>
+
+    </section>  
 
     <section id="Subsystems" class="subsystems">
 	<h1 class="ss-header">Subsystems</h1>
