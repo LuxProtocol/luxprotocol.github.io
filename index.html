@@ -194,6 +194,7 @@
 	  margin-bottom: 30px;
 	}
 
+
         /* Placeholder content to demonstrate scrolling */
         .content {
             padding: calc(var(--navbar-height) + 2rem) var(--navbar-padding);
@@ -395,9 +396,9 @@
             
             <nav id="navbarMenu" class="navbar__menu" role="navigation" aria-labelledby="navbarToggle">
                 <ul class="navbar__list">
-                    <li class="navbar__item"><a href="#Home" class="navbar__link">Home</a></li>
+                    <li class="navbar__item"><a href="#Aerial Matrix" class="navbar__link">Aerial Matrix</a></li>
                     <li class="navbar__item"><a href="#Team" class="navbar__link">Team</a></li>
-		    <li class="navbar__item"><a href="#Aerial Matrix" class="navbar__link">Aerial Matrix</a></li>
+		    <li class="navbar__item"><a href="#Subsystems" class="navbar__link">Subsystems</a></li>
                     <li class="navbar__item"><a href="#Documentation" class="navbar__link">Documentation</a></li>
                 </ul>
             </nav>
@@ -413,7 +414,7 @@
             <a href="#Home" class="btn btn-lg glass-btn">Learn More</a>
     	</div>
     </section>
-    <section id="Home">
+    <section id="Aerial Matrix">
       <h1>Aerial Matrix</h1>
       <p>
         Search and rescue and emergency response operations are significantly
@@ -526,35 +527,30 @@
 	</div>
     
 
-    <section id="Aerial Matrix" class="video-section">
-        <video autoplay muted loop class="bg-video">
-        <source src="./assets/Matrix.mp4" type="video/mp4">
-    </video>
-    <div class="content">
+    <section id="Subsystems" class="subsystems">
+	<h1 class="ss-header">Subsystems</h1>
+	<div class="ss-tabbar">
+	    <button class="ss-tab active" onclick="switchTab(0)">Drone Contruction</button>
+	    <button class="ss-tab" 	  onclick="switchTab(1)">Drone Control</button>
+	    <button class="ss-tab" 	  onclick="switchTab(2)">Attachments</button>
+	    <button class="ss-tab" 	  onclick="switchTab(3)">Drone Network</button>
+	    <button class="ss-tab" 	  onclick="switchTab(4)">Object Detection</button>
+  	</div>
 
-        <h1>Presentations</h1>
-        <h2>Capstone I</h2>
-        <div class="link-list">
-            <ul>
-                <li>
-                    <a
-                    href="./documentation/Capstone_I_Pre-Design_Powerpoint_LuxProtocol (1).pptx"
-                    target="_blank"
-                    >Preliminary Design Review</a
-                    >
-                </li>
-                <li>
-                    <a href="" target="_blank">Mid Semester Design Review</a>
-                </li>
-                <li>
-                    <a href="" target="_blank">Final Design Review</a>
-                </li>
-            </ul>
-        </div>
-        <h2>Capstone II</h2>
-        <div class="link-list"></div>
-    </div>
+	<div class="ss-panel active"><!-- Power content: image, text, anything --></div>
+	<div class="ss-panel"><!-- Navigation content --></div>
+	<div class="ss-panel"><!-- Thermal content --></div>
+	<div class="ss-panel"><!-- Comms content --></div>
+	<div class="ss-panel"><!-- Payload content --></div>
+	
+	<script>
+	  function switchTab(index) {
+	    document.querySelectorAll('.ss-tab').forEach((t, i) => t.classList.toggle('active', i === index));
+	    document.querySelectorAll('.ss-panel').forEach((p, i) => p.classList.toggle('active', i === index));
+	  }
+	</script>
     </section>
+
     <section id="Documentation">
       <h1>Documents</h1>
       <div class="link-list">
@@ -581,6 +577,11 @@
           </li>
         </ul>
       </div>
+    </section>
+
+    <section id="Posts">
+    
+
     </section>
   </body>
   <script>
