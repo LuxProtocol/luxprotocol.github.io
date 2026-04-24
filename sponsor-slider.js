@@ -1,17 +1,17 @@
 const sponsors = [
   {
     name: "MSU Bagley College of Engineering",
-    svg: `<img src="./assets/logos/MSU-BCE-white.svg" height="128" style="display:block;">`,
+    svg: `<img src="./assets/logos/MSU-BCE-white.svg" height="96" style="display:block;">`,
     url: "https://www.bagley.msstate.edu/" 
   },
   {
     name: "MSU Department of Electrical and Computer Engineering",
-    svg: `<img src="./assets/logos/MSU-ECE-white.svg" height="128" style="display:block;">`,
+    svg: `<img src="./assets/logos/MSU-ECE-white.svg" height="96" style="display:block;">`,
     url: "https://www.ece.msstate.edu/"
   },
   {
     name: "Microsoft",
-    svg: `<img src="./assets/logos/Microsoft-black.svg" height="128" style="display:block;">`,
+    svg: `<img src="./assets/logos/Microsoft-black.svg" height="96" style="display:block;">`,
     url: "https://www.microsoft.com/en-us"
   }, 
 ];

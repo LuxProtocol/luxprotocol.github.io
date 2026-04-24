@@ -63,7 +63,7 @@ strong {
 }
 
 .navbar a {
-    color: white;
+    color: #222;
     text-decoration: none;
     font-weight: bold;
 }
@@ -205,7 +205,7 @@ figcaption {
   font-size: 6rem;
   font-weight: 600;
   margin: 100px 0;
-  color: #fff;
+  color: #222;
 }
 
 /* Tab bar */
@@ -276,7 +276,6 @@ color: var(--color-text-tertiary);
 text-transform: uppercase;
 text-align: center;
 margin-bottom: 1.25rem;
-margin-top: 4rem;
 }
 .divider-bar {
     height: 0.5px;
@@ -304,7 +303,6 @@ box-shadow:
 	0 4px 16px rgba(0, 0, 0, 0.15);
 
 }
-.sponsor-track:hover { animation-play-state: paused; }
 @keyframes scroll-left {
 0%   { transform: translateX(0); }
 100% { transform: translateX(-50%); }
