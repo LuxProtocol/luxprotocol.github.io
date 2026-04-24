@@ -572,15 +572,42 @@
 	<div class="ss-panel">Drone Network goes here</div>
 	<div class="ss-panel">Object Detection goes here</div>
 	
-	<script>
-	  function switchTab(index) {
-	    document.querySelectorAll('.ss-tab').forEach((t, i) => t.classList.toggle('active', i === index));
-	    document.querySelectorAll('.ss-panel').forEach((p, i) => p.classList.toggle('active', i === index));
-	  }
-	</script>
+	<script src="subsystem.js"></script>
     </section>
 
-    <section id="Documentation">
+    <section class="file-class" id="Documentation">
+      <div class="search-wrap">
+	    <span class="search-icon">⌕</span>
+	    <input type="search" id="searchInput" placeholder="Search files…" oninput="filterCards(this.value)" />
+      </div>
+
+      <div class="file-two-col">
+      <div class="file-section" id="sec-docs">
+        <div class="file-section-header">
+          <div class="file-section-icon file-doc-icon">📄</div>
+          <span class="file-section-label">Documents</span>
+          <span class="file-section-count" id="doc-count">Loading...</span>
+        </div>
+        <div class="file-cards" id="doc-cards"></div>
+      </div>
+
+      <div class="file-col-divider"></div>
+
+    <!-- Presentations -->
+      <div class="file-section" id="sec-pres">
+        <div class="file-section-header">
+          <div class="file-section-icon file-pres-icon">🖼️</div>
+          <span class="file-section-label">Presentations</span>
+          <span class="file-section-count" id="pres-count">Loading...</span>
+        </div>
+        <div class="file-cards" id="pres-cards"></div>
+      </div>
+      </div>
+
+
+
+
+
       <h1>Documents</h1>
       <div class="link-list">
         <ul>
@@ -631,4 +658,5 @@
             }
         });
   </script>
+  <script src="document.js"></script>
 </html>
