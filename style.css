@@ -204,14 +204,14 @@ figcaption {
 .ss-header {
   font-size: 6rem;
   font-weight: 600;
-  margin: 100px 0;
+  margin-bottom: 80px;
   color: #222;
 }
 
 /* Tab bar */
 .ss-tabbar {
   display: flex;
-  gap: 6px;
+  gap: 15px;
 }
 
 .ss-tab {
@@ -223,17 +223,18 @@ figcaption {
   background: rgba(220, 220, 220, 0.9); /*#f0f0f0;*/
   border: 0.5px solid var(--background);
   border-bottom: none;
-  border-radius: 6px 6px 0 0;
+  border-radius: 20px 20px 0 0;
   cursor: pointer;
   text-align: center;
   position: relative;
-  top: 1px;       /* inactive tabs sit slightly lower */
+  top: 0.5px;       /* inactive tabs sit slightly lower */
   z-index: 0;
   transition: color 0.15s;
 }
 
 .ss-tab:hover:not(.active) {
   color: #111;
+  font-weight: 600;
 }
 
 .ss-tab.active {
@@ -242,10 +243,12 @@ figcaption {
   font-weight: 600;
   top: 0.7rem;         /* lifts flush with the panel */
   z-index: 2;
-  border-radius: 6px 6px 0 0;
+  border-radius: 20px 20px 0 0;
   border-bottom: 1px solid #fff; /* covers the panel's top border at the seam */
   border-color: #fff;
   font-size: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  clip-path: inset(-20px -20px 19% -20px);
 }
 
 /* Panel container */
@@ -262,11 +265,13 @@ figcaption {
   display: none;
   padding: 1.5rem;
   min-height: 200px;
+  border-radius: 0 0 20px 20px;
 }
 
 .ss-panel.active {
   display: block;
   background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .sponsor-label {
