@@ -40,7 +40,7 @@
  
   async function loadFiles() {
     await Promise.all([
-      loadFolder(PRES_FOLDER, 'doc-cards', 'doc-count', 'doc'),
+      loadFolder(DOC_FOLDER, 'doc-cards', 'doc-count', 'doc'),
       loadFolder(PRES_FOLDER, 'pres-cards', 'pres-count', 'pres'),
     ]);
   }
