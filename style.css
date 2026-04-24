@@ -220,8 +220,8 @@ figcaption {
   font-size: 1.5rem;
   font-weight: 400;
   color: #666;
-  background: rgba(240, 240, 240, 0.8); /*#f0f0f0;*/
-  border: 0.5px solid #ccc;
+  background: rgba(220, 220, 220, 0.9); /*#f0f0f0;*/
+  border: 0.5px solid var(--background);
   border-bottom: none;
   border-radius: 6px 6px 0 0;
   cursor: pointer;
