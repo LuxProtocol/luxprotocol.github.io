@@ -18,7 +18,7 @@
         <span class="file-icon">📄</span>
         <div class="file-card-name">${name}</div>
       </div>
-      <div class="file-card-meta">${file.size}</div>
+      <div class="file-card-meta">${file.size}  · ${file.date}</div>
       <button class="file-card-download" title="Download" onclick="event.preventDefault(); window.open('${url}')">↓</button>
     `;
     return card;
