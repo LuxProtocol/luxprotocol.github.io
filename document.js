@@ -10,6 +10,7 @@
     const name = file.name.replace(/\.[^/.]+$/, '');
     const card = document.createElement('a');
     card.href = url;
+    card.target="_blank";
     card.className = `file-card file-${type}-card`;
     card.dataset.name = file.name;
     card.innerHTML = `
