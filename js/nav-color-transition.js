@@ -1,8 +1,9 @@
 const nav = document.getElementById('main-nav');
 const navLinks = nav.querySelectorAll('a');
 
-function setNavColor(color) {
+function setNavColor(color, icon) {
   navLinks.forEach(el => el.style.color = color);
+  if (icon) document.getElementById('nav-icon').textContent = icon;
 }
 
 const visibleSections = new Set();
@@ -22,7 +23,7 @@ const observer = new IntersectionObserver((entries) => {
   );
 
   if (sections.length > 0) {
-    setNavColor(sections[0].dataset.navcolor);
+    setNavColor(sections[0].dataset.navcolor, sections[0].dataset.navicon);
   }
 }, {
   threshold: 0,

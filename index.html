@@ -276,7 +276,7 @@
         /* Make text readable against any background with a subtle shadow */
         .navbar__brand,
         .navbar__link {
-            text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.5);
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
         }
 
         /*
@@ -397,7 +397,7 @@
     <header class="navbar" role="banner" id="main-nav">
         <div class="navbar__container">
             <a href="#" class="navbar__brand" aria-label="Homepage">
-		<img src="./assets/logos/LP_black.webp" alt="LuxProtocol" />
+		<img id="nav-icon" src="./assets/logos/LP_black.webp" alt="LuxProtocol" />
 	    </a>
             
             <button class="navbar__toggle" 
@@ -421,7 +421,7 @@
             </nav>
         </div>
     </header> 
-    <section class="hero" data-navcolor="#fff">
+    <section class="hero" data-navcolor="#fff" data-navicon="./assets/logos/LP_white.webp">
     	<video autoplay muted loop playsinline class="hero__video" id="bgVideo">
             <source src="assets/background/Matrix.mp4" type="video/mp4">
     	</video>
@@ -431,7 +431,7 @@
             <a href="#Aerial Matrix" class="btn btn-lg glass-btn">Learn More</a>
     	</div>
     </section>
-    <section id="Aerial Matrix" data-navcolor="#222">
+    <section id="Aerial Matrix" data-navcolor="#222" data-navicon="./assets/logos/LP_black.webp">
       <h1>Aerial Matrix</h1>
       <p>
         Search and rescue and emergency response operations are significantly
@@ -456,7 +456,7 @@
         Aerial Matrix: (left) Process Diagram, (right) System Diagram
       </figcaption>
     </section>
-    <section class="team" id="Team">
+    <section class="team" id="Team" data-navcolor="#222" data-navicon="./assets/logos/LP_black.webp">
 	<div class="team-header">
       	  <h1>Meet the Team</h1>
         </div>
@@ -556,7 +556,7 @@
 
     </section>  
 
-    <section id="Subsystems" class="subsystems">
+    <section id="Subsystems" class="subsystems" data-navcolor="#222" data-navicon="./assets/logos/LP_black.webp">
 	<h1 class="ss-header">Subsystems</h1>
 	<div class="ss-tabbar">
 	    <button class="ss-tab active" onclick="switchTab(0)">Drone Construction</button>
@@ -575,7 +575,7 @@
 	<script src="js/subsystem.js"></script>
     </section>
 
-    <section class="file-class" id="Documentation">
+    <section class="file-class" id="Documentation" data-navcolor="#222" data-navicon="./assets/logos/LP_black.webp">
       <div class="search-wrap">
 	    <span class="search-icon">⌕</span>
 	    <input type="search" id="searchInput" placeholder="Search files…" oninput="filterCards(this.value)" />
@@ -606,10 +606,10 @@
 
    </section>
 
-    <section id="Updates">
+   <section id="Updates" data-navcolor="#222" data-navicon="./assets/logos/LP_black.webp">
     
 
-    </section>
+   </section>
   </body>
   <script>
         // A self-contained, accessible script to toggle the mobile menu.
