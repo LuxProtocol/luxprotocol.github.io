@@ -3,7 +3,7 @@ const navLinks = nav.querySelectorAll('a');
 
 function setNavColor(color, icon) {
   navLinks.forEach(el => el.style.color = color);
-  if (icon) document.getElementById('nav-icon').textContent = icon;
+  if (icon) document.getElementById('nav-icon').src = icon;
 }
 
 const visibleSections = new Set();
