@@ -394,7 +394,7 @@
     </style>
   </head>
   <body>
-    <header class="navbar" role="banner">
+    <header class="navbar" role="banner" id="main-nav">
         <div class="navbar__container">
             <a href="#" class="navbar__brand" aria-label="Homepage">
 		<img src="./assets/logos/LP_black.webp" alt="LuxProtocol" />
@@ -421,7 +421,7 @@
             </nav>
         </div>
     </header> 
-    <section class="hero">
+    <section class="hero" data-navcolor="#fff">
     	<video autoplay muted loop playsinline class="hero__video" id="bgVideo">
             <source src="assets/background/Matrix.mp4" type="video/mp4">
     	</video>
@@ -431,7 +431,7 @@
             <a href="#Aerial Matrix" class="btn btn-lg glass-btn">Learn More</a>
     	</div>
     </section>
-    <section id="Aerial Matrix">
+    <section id="Aerial Matrix" data-navcolor="#222">
       <h1>Aerial Matrix</h1>
       <p>
         Search and rescue and emergency response operations are significantly
@@ -552,7 +552,7 @@
 	    <div class="sponsor-track" id="track"></div>
 	  </div>
 	</div>
-	<script src="sponsor-slider.js"></script>
+	<script src="js/sponsor-slider.js"></script>
 
     </section>  
 
@@ -572,7 +572,7 @@
 	<div class="ss-panel">Drone Network goes here</div>
 	<div class="ss-panel">Object Detection goes here</div>
 	
-	<script src="subsystem.js"></script>
+	<script src="js/subsystem.js"></script>
     </section>
 
     <section class="file-class" id="Documentation">
@@ -629,5 +629,6 @@
             }
         });
   </script>
-  <script src="document.js"></script>
+  <script src="js/document.js"></script>
+  <script src="js/nav-color-transition.js"></script>
 </html>
