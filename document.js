@@ -19,7 +19,7 @@
         <div class="file-card-name">${name}</div>
       </div>
       <div class="file-card-meta">${file.size}  · ${file.date}</div>
-      <a href="${url}"download class="file-card-download" title="Download">↓</button>
+      <a href="${url}"download class="file-card-download" title="Download">↓</a>
     `;
     return card;
   }
