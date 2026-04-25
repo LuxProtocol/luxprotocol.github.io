@@ -19,7 +19,7 @@
         <div class="file-card-name">${name}</div>
       </div>
       <div class="file-card-meta">${file.size}  · ${file.date}</div>
-      <button class="file-card-download" title="Download" onclick="event.preventDefault(); window.open('${url}')">↓</button>
+      <a href="${url}"download class="file-card-download" title="Download">↓</button>
     `;
     return card;
   }
