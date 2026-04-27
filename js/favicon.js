@@ -11,7 +11,7 @@ function updateFavicon() {
     document.head.appendChild(favicon);
   }
 
-  favicon.href = isDark ? '/assets/logos/LP_black.webp' : '/assets/logos/LP_white.webp';
+  favicon.href = isDark ? '/assets/logos/LP_white.webp' : '/assets/logos/LP_black.webp';
 }
 
 // Wait for DOM to be ready
