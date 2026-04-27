@@ -1,24 +1,20 @@
+const osTheme = window.matchMedia('(prefers-color-scheme: dark)');
+
 function updateFavicon() {
-  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark = osTheme.matches; // OS/browser theme, NOT your site theme
 
-  // Find existing or create a new one
-  let favicon = document.querySelector('link[rel="icon"]') 
-             || document.querySelector('link[rel="shortcut icon"]');
-
+  let favicon = document.querySelector('link[rel="icon"]');
   if (!favicon) {
     favicon = document.createElement('link');
     favicon.rel = 'icon';
     document.head.appendChild(favicon);
   }
 
-  favicon.href = isDark ? '/assets/logos/LP_white.webp' : '/assets/logos/LP_black.webp';
+  favicon.type = 'image/svg+xml';
+  favicon.href = isDark
+    ? '/assets/logos/LP_black.svg'
+    : '/assets/logos/LP_white.svg';
 }
 
-// Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', updateFavicon);
-
-// Update when the user switches modes
-window.matchMedia('(prefers-color-scheme: dark)')
-  .addEventListener('change', updateFavicon);
-window.matchMedia('(prefers-color-scheme: light)')
-  .addEventListener('change', updateFavicon);
+osTheme.addEventListener('change', updateFavicon);
