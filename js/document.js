@@ -50,8 +50,9 @@
 
 
 function filterCards(query) {
-    const q = query.toLowerCase().trim();
- 
+    const normalize = s => s.replaceAll(' ', '_').toLowerCase().trim();
+    const q = normalize(query);
+
     ['doc-cards', 'pres-cards'].forEach(id => {
       const container = document.getElementById(id);
       const cards = container.querySelectorAll('.file-card');
