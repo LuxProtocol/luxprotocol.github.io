@@ -16,7 +16,7 @@
     card.innerHTML = `
       <div class="file-card-type"><span class="file-card-type-dot"></span>${getExt(file.name)}</div>
       <div class="file-card-top">
-        <span class="fiv-cla fiv-icon-${getExt(file.name).toLowerCase()} file-icon"></span>
+        <span class="fiv-hct fiv-icon-${getExt(file.name).toLowerCase()} file-icon"></span>
         <div class="file-card-name">${name}</div>
       </div>
       <div class="file-card-meta">${file.size}  · ${file.date}</div>
