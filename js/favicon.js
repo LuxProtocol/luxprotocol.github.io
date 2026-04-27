@@ -12,8 +12,8 @@ function updateFavicon() {
 
   favicon.type = 'image/svg+xml';
   favicon.href = isDark
-    ? '/assets/logos/LP_black.svg'
-    : '/assets/logos/LP_white.svg';
+    ? '/assets/logos/LP_white.webp'
+    : '/assets/logos/LP_black.webp';
 }
 
 document.addEventListener('DOMContentLoaded', updateFavicon);
