@@ -493,10 +493,10 @@ transition: opacity .25s ease;
 display: flex;
 align-items: center;
 gap: 8px;
-font-size: 10px;
+font-size: .8rem;
 letter-spacing: .14em;
 text-transform: uppercase;
-font-weight: 500;
+font-weight: 550;
 }
 .file-doc-card  .file-card-type { color: var(--accent); }
 .file-pres-card .file-card-type { color: var(--accent2); }
@@ -504,13 +504,13 @@ font-weight: 500;
 .file-card-type-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
 
 .file-card-name {
-font-size: .95rem;
+font-size: 1.1rem;
 font-weight: 500;
 color: var(--text);
 line-height: 1.35;
 }
 .file-card-meta {
-font-size: .78rem;
+font-size: .9rem;
 color: var(--muted);
 margin-top: auto;
 }
