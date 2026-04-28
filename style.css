@@ -344,7 +344,6 @@ to   { opacity: 1; transform: translateY(0); }
 .search-wrap {
 position: relative;
 max-width: 40rem;
-margin-bottom: 52px;
 animation: fadeUp .8s ease .08s both;
 }
 .search-icon {
@@ -370,6 +369,29 @@ transition: border-color .2s;
 input[type="search"]::placeholder { color: var(--muted); }
 input[type="search"]:focus { border-color: rgba(232,213,163,.45); }
 input[type="search"]::-webkit-search-cancel-button { display: none; }
+
+.file-tag-filters { margin: 20px 0; display: flex; gap: 6px; flex-wrap: wrap; }
+
+.file-tag-filter-btn {
+  font-family: var(--font-family-sans-serif, sans-serif);
+  font-size: 0.9rem;
+  padding: 4px 11px;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.file-tag-filter-btn:hover,
+.file-tag-filter-btn.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(184,92,42,0.07);
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 6px 15px;
+}
 
 .file-class {
       --surface:   #ede4d8;
