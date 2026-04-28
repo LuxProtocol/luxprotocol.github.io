@@ -1,5 +1,4 @@
 MIT License
-
 Copyright (c) 2026 LuxProtocol
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -9,8 +8,23 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+2. Attribution Requirement: All copies, distributions, derivative works, or
+   substantial portions of the Software originating from this codebase must
+   prominently acknowledge Lux Protocol and its members. This acknowledgment
+   must appear in:
+     a. Any documentation, README files, or user-facing materials accompanying
+        the Software;
+     b. Any "About," "Credits," or equivalent section of a product or application
+        built using the Software;
+     c. Any public-facing distribution, publication, or release of the Software
+        or its derivatives.
+
+   The acknowledgment must include the following notice:
+   "This software is based on or derived from work by Lux Protocol and its 
+   members."
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
