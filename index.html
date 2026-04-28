@@ -7,6 +7,8 @@
     <script src="js/favicon.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="assets/dist/file-icon-high-contrast.min.css" />
+    <link rel="stylesheet" href="styles/blog_github.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         /*
         ========================================
@@ -210,6 +212,13 @@
 	  font-size: 2rem;
 	  margin-top: 30px;
 	  margin-bottom: 30px;
+	}
+
+	.team-contact {
+	  font-size: 1.3rem;
+	  margin-top: auto;
+	  padding-top: 20px;
+	  margin-bottom: 20px;
 	}
 
 	/* Placeholder content to demonstrate scrolling */
@@ -472,6 +481,7 @@
 		<h2>Robert Draper</h2>
 		<p class="team-title">Project Manager &amp; Drone Construction Lead</p>
 	      </div>
+	      <p class="team-contact">Email: rsd156@msstate.edu</p>
 	    </div>
 	  </div>
 	  <div class="team-column">
@@ -481,6 +491,7 @@
 		<h2>Oliver Higginbotham</h2>
 		<p class="team-title">Chief Scientist &amp; Drone Control Lead</p>
 	      </div>
+	      <p class="team-contact">Email: odh49@msstate.edu</p>
 	    </div>
 	  </div>
 	  <div class="team-column">
@@ -490,6 +501,7 @@
 		<h2>Caden Carter</h2>
 		<p class="team-title">Attachments Lead</p>
 	      </div>
+	      <p class="team-contact">Email: cmc1490@msstate.edu</p>
 	    </div>
 	  </div>
 	  <div class="team-column">
@@ -499,6 +511,7 @@
                 <h2>Joshua Evans</h2>
                 <p class="team-title">Drone Network Lead</p>
               </div>
+	      <p class="team-contact">Email: jme435@msstate.edu</p>
             </div>
           </div>
           <div class="team-column">
@@ -508,6 +521,7 @@
                 <h2>Antonio Gray</h2>
                 <p class="team-title">Object Detection Lead</p>
               </div>
+	      <p class="team-contact">Email: ajg656@msstate.edu</p>
             </div>
           </div>
 	</div>
@@ -607,8 +621,96 @@
 
    </section>
 
-   <section id="Updates" data-navcolor="#222" data-navicon="./assets/logos/LP_black.webp">
-    
+   <section id="Updates" data-navcolor="#222" data-navicon="./assets/logos/LP_black.webp" class="layout">
+	   <section id="blog-section" class="panel panel-blog">
+
+	    <!-- Blog list view -->
+	    <div id="blog-list" class="blog-list">
+	      <div class="panel-header">
+		<h2 class="panel-title">Field Notes</h2>
+		<p class="panel-subtitle">Engineering dispatches from the team</p>
+		<div class="tag-filters" id="tag-filters"></div>
+	      </div>
+	      <div class="posts-grid" id="posts-grid">
+		<!-- Dynamically populated by app.js -->
+	      </div>
+	    </div>
+
+	    <!-- Blog detail view (hidden by default) -->
+	    <div id="blog-detail" class="blog-detail hidden">
+	      <button class="back-btn" id="back-btn">
+		<span class="back-arrow">←</span> All Posts
+	      </button>
+	      <article class="article-container">
+		<header class="article-header">
+		  <div class="article-meta-top">
+		    <div class="article-tags" id="detail-tags"></div>
+		    <span class="article-date" id="detail-date"></span>
+		  </div>
+		  <h1 class="article-title" id="detail-title"></h1>
+		  <div class="article-author-row">
+		    <div class="author-avatar" id="detail-avatar"></div>
+		    <span class="article-author" id="detail-author"></span>
+		  </div>
+		</header>
+
+		<!-- Image gallery -->
+		<div class="image-gallery" id="detail-gallery"></div>
+
+		<!-- Rendered markdown -->
+		<div class="markdown-body" id="detail-content"></div>
+	      </article>
+	    </div>
+
+	  </section>
+
+	  <!-- ═══════════════ DIVIDER ═══════════════ -->
+	  <div class="panel-divider">
+	    <div class="divider-line"></div>
+	    <div class="divider-icon">⬡</div>
+	    <div class="divider-line"></div>
+	  </div>
+
+	  <!-- ═══════════════ RIGHT: GITHUB ═══════════════ -->
+	  <section id="github-section" class="panel panel-github">
+
+	    <div class="panel-header">
+	      <div class="org-identity">
+		<div class="org-logo-wrap">
+		  <img class="org-logo" id="org-logo" src="" alt="Org logo" />
+		</div>
+		<div class="org-text">
+		  <h2 class="org-name" id="org-name"></h2>
+		  <p class="org-desc" id="org-desc"></p>
+		  <div class="org-badges">
+		    <span class="badge" id="badge-repos"></span>
+		    <span class="badge" id="badge-members"></span>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+
+	    <!-- Top Repos -->
+	    <div class="gh-block">
+	      <h3 class="gh-block-title"><span class="gh-icon">▲</span> Top Repositories</h3>
+	      <ul class="repo-list" id="repo-list"></ul>
+	    </div>
+
+	    <!-- Top Contributors -->
+	    <div class="gh-block">
+	      <h3 class="gh-block-title"><span class="gh-icon">◆</span> Top Contributors</h3>
+	      <ul class="contributor-list" id="contributor-list"></ul>
+	    </div>
+
+	    <!-- Recent Commits -->
+	    <div class="gh-block">
+	      <h3 class="gh-block-title"><span class="gh-icon">●</span> Recent Commits</h3>
+	      <ul class="commit-list" id="commit-list"></ul>
+	    </div>
+
+	  </section>
+	  <script src="js/github_data.js"></script>
+	  <script src="js/blog_github_renderer.js"></script>
 
    </section>
   </body>
