@@ -183,6 +183,7 @@ function openPost(post) {
   // Gallery
   const gallery = document.getElementById("detail-gallery");
   const images  = post.meta.images || [];
+
   if (images.length) {
     gallery.innerHTML = images
       .map((src, i) => `
