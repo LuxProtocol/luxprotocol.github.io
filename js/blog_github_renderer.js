@@ -12,9 +12,9 @@ marked.setOptions({
 // Add your markdown filenames here whenever you
 // drop a new .md file into /blogs/
 const BLOG_FILES = [
-  "blogs/getting-started-with-rust.md",
-  "blogs/scalable-apis-with-go.md",
-  "blogs/kubernetes-practical-guide.md",
+  "./blogs/getting-started-with-rust.md",
+  "./blogs/scalable-apis-with-go.md",
+  "./blogs/kubernetes-practical-guide.md",
 ];
 
 // ─── State ───────────────────────────────────────
