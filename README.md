@@ -15,7 +15,7 @@ The website presents:
 
 ## Website
 
-The live site is hosted here [HERE](luxprotocol.github.io/) 
+The live site is hosted here [HERE](https://luxprotocol.github.io/) 
 
 ---
 
