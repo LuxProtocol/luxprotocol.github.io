@@ -575,3 +575,12 @@ color: var(--muted);
   height: 4px;
   margin: 0 auto;
 }
+
+/* ATTACHMENTS */
+
+.subsystem-img {
+	display: block;
+	margin: 20px auto 0 auto;
+	height: 300px;
+	width: auto;
+}
