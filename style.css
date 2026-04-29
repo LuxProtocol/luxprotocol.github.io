@@ -276,6 +276,151 @@ figcaption {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+.ss-panel-left {
+  padding: 2rem 1.75rem;
+  border-right: 0.5px solid #d4d2ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ss-panel-left p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5f5e5a;
+  margin: 0;
+}
+
+.ss-gallery-right {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #f1efe8;
+}
+ 
+.ss-gallery-track {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+}
+ 
+.ss-gallery-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+ 
+.ss-gallery-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+ 
+.ss-gallery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+ 
+.ss-gallery-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 13px;
+  color: #888780;
+  margin: 0;
+}
+ 
+/* ── Progress bar ────────────────────────────────────────── */
+.ss-progress-bar {
+  height: 2px;
+  background: #d4d2ca;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+ 
+.ss-progress-fill {
+  height: 100%;
+  background: #5f5e5a;
+  width: 0%;
+}
+ 
+/* ── Controls ────────────────────────────────────────────── */
+.ss-gallery-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.875rem;
+  border-top: 0.5px solid #d4d2ca;
+  background: #ffffff;
+  gap: 8px;
+  flex-shrink: 0;
+}
+ 
+.ss-ctrl-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0.5px solid #b4b2a9;
+  background: #f1efe8;
+  color: #1a1a18;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+ 
+.ss-ctrl-btn:hover  { background: #d3d1c7; }
+.ss-ctrl-btn:active { transform: scale(0.95); }
+ 
+.ss-gallery-dots {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+ 
+.ss-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b4b2a9;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  border: none;
+  padding: 0;
+  flex-shrink: 0;
+}
+ 
+.ss-dot.active {
+  background: #1a1a18;
+  transform: scale(1.3);
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 0.5px solid #b4b2a9;
+  color: #5f5e5a;
+  background: #f1efe8;
+}
+
 .sponsor-label {
 font-size: 3rem;
 letter-spacing: 0.12em;

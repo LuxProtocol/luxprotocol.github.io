@@ -589,7 +589,26 @@
 	    <button class="ss-tab" 	  onclick="switchTab(4)">Object Detection</button>
   	</div>
 
-	<div class="ss-panel active">Drone Construction goes here</div>
+	<div class="ss-panel active">
+		<div class="ss-panel-left">
+			<h2>Drone Contruction</h2>
+			<p>The 'skeletal system' of the project providing stability, support, and structural integrity for all power and electrical components</p>
+			<div class="ss-tag-row">
+				<span class="ss-tag">Propulsion</span>
+      				<span class="ss-tag">Power</span>
+      				<span class="ss-tag">Circuitry</span>
+    			</div>
+		</div>
+		<div class="ss-panel-right">
+			<div class="ss-gallery-track"></div>
+    			<div class="ss-progress-bar"><div class="ss-progress-fill"></div></div>
+    			<div class="ss-gallery-controls">
+      				<button class="ss-ctrl-btn ss-prev" aria-label="Previous">&#8592;</button>
+      				<div class="ss-gallery-dots"></div>
+      				<button class="ss-ctrl-btn ss-next" aria-label="Next">&#8594;</button>
+    			</div>
+		</div>
+	</div>
 	<div class="ss-panel">Drone Control goes here</div>
 	<div class="ss-panel">The Attachments Subsystem's purpose is to allow modular attachment for our drones,
 		allowing fast and easy swaps for a variety of cameras, lights, sensors, and other hardware.
@@ -599,6 +618,8 @@
 	<div class="ss-panel">Object Detection uses LLM models to identify and classify multiple entities in a short span of time</div>
 	
 	<script src="js/subsystem.js"></script>
+	<script src="js/gallery.js"></script>
+	<script src="js/gallery.config.js"></script>
     </section>
     <div class="row-divider"></div>
     <section class="file-class" id="Documentation" data-navcolor="#222" data-navicon="./assets/logos/LP_black.webp">
