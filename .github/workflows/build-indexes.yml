@@ -27,7 +27,7 @@ jobs:
           python-version: '3.12'
  
       - name: Generate gallery.config.js
-        run: node js/build-gallery.js
+        run: node build-gallery.js
  
       - name: Run update-index.py
         run: python update-index.py
@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add js/gallery.config.js
+          git add gallery.config.js
           git add presentations/index.json documents/index.json
           if git diff --cached --quiet; then
             echo "No changes — skipping commit."
