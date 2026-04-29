@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="assets/dist/file-icon-high-contrast.min.css" />
     <link rel="stylesheet" href="styles/blog_github.css" />
+    <link rel="stylesheet" href="styles/intro.css" />
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         /*
@@ -404,6 +405,12 @@
     </style>
   </head>
   <body>
+    <div id="intro-overlay">
+        <div id="intro-title">Lux Protocol</div>
+        <div id="intro-bar"></div>
+        <div id="intro-status">ILLUMINATING THE FUTURE</div>
+    </div>
+    <div id="page-content">
     <header class="navbar" role="banner" id="main-nav">
         <div class="navbar__container">
             <a href="#" class="navbar__brand" aria-label="Homepage">
@@ -435,10 +442,10 @@
     	<video autoplay muted loop playsinline class="hero__video" id="bgVideo">
             <source src="assets/background/Matrix.mp4" type="video/mp4">
     	</video>
-    	<div class="hero-content">
+    	<div class="intro">
             <h1>Lux Protocol</h1>
-            <p>Lighting the way to the future.</p>
-            <a href="#Aerial Matrix" class="btn btn-lg glass-btn">Learn More</a>
+	    <div class="intro-bar"></div>
+            <p>ILLUMINATING THE FUTURE</p>
     	</div>
     </section>
     <section id="Aerial Matrix" data-navcolor="#222" data-navicon="./assets/logos/LP_black.webp">
@@ -715,6 +722,7 @@
 	  <script src="js/blog_github_renderer.js"></script>
 
    </section>
+    </div>
   </body>
   <script>
         // A self-contained, accessible script to toggle the mobile menu.
