@@ -3,14 +3,14 @@
 // Depends on: gallery.config.js (defines GALLERY_IMAGES object)
 
 (function () {
-  const INTERVAL = 4000;
+  const INTERVAL = 10000;
 
   const SUBSYSTEMS = [
-    'drone-construction',
-    'drone-control',
+    'droneConstruction',
+    'droneControl',
     'attachments',
-    'drone-network',
-    'object-detection',
+    'droneNetwork',
+    'objectDetection',
   ];
 
   function buildGallery(panel, images) {
