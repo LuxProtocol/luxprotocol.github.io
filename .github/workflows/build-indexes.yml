@@ -1,0 +1,50 @@
+name: Build Gallery Config
+ 
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'assets/subsystems/**'
+      - 'js/build-gallery.js'
+      - 'update-index.py'
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    permissions:
+      contents: write
+ 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+ 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+ 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+ 
+      - name: Generate gallery.config.js
+        run: node js/build-gallery.js
+ 
+      - name: Run update-index.py
+        run: python update-index.py
+ 
+      - name: Commit changes if any
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add js/gallery.config.js
+          git add presentations/index.json documents/index.json
+          if git diff --cached --quiet; then
+            echo "No changes — skipping commit."
+          else
+            git commit -m "chore: rebuild gallery config and index [skip ci]"
+            git push
+          fi
