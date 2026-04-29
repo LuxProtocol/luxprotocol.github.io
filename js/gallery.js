@@ -29,6 +29,12 @@
       return;
     }
 
+    if (images.length === 1) {
+      right.querySelector('.ss-gallery-controls').style.display = 'none';
+      right.querySelector('.ss-progress-bar').style.display = 'none';
+    }
+
+
     // Build slides
     images.forEach((src, i) => {
       const slide = document.createElement('div');
