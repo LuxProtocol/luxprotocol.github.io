@@ -6,7 +6,9 @@ const GALLERY_IMAGES = {
     "assets/subsystems/droneConstruction/drone2.webp"
   ],
   "droneControl": [],
-  "attachments": [],
+  "attachments": [
+    "assets/subsystems/attachments/attachments_preview.png"
+  ],
   "droneNetwork": [],
   "objectDetection": []
 };
