@@ -7,7 +7,8 @@ const GALLERY_IMAGES = {
   ],
   "droneControl": [],
   "attachments": [
-    "assets/subsystems/attachments/attachments_preview.png"
+    "assets/subsystems/attachments/attachments_preview.png",
+    "assets/subsystems/attachments/attachments_printed.png"
   ],
   "droneNetwork": [],
   "objectDetection": []
