@@ -11,5 +11,9 @@ const GALLERY_IMAGES = {
     "assets/subsystems/attachments/attachments_printed.png"
   ],
   "droneNetwork": [],
-  "objectDetection": []
+  "objectDetection": [
+    "assets/subsystems/objectDetection/ai_device.png",
+    "assets/subsystems/objectDetection/screenshot_one.png",
+    "assets/subsystems/objectDetection/screenshot_two.png"
+  ]
 };
