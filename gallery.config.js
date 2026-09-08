@@ -5,7 +5,9 @@ const GALLERY_IMAGES = {
     "assets/subsystems/droneConstruction/drone1.webp",
     "assets/subsystems/droneConstruction/drone2.webp"
   ],
-  "droneControl": [],
+  "droneControl": [
+    "assets/subsystems/droneControl/flightVisualization.gif"
+  ],
   "attachments": [
     "assets/subsystems/attachments/attachments_preview.png",
     "assets/subsystems/attachments/attachments_printed.png"
